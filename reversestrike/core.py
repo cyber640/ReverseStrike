@@ -40,17 +40,17 @@ class ReverseStrikeComplete:
         # Clear screen
         os.system('cls' if os.name == 'nt' else 'clear')
         
-        # Your exact banner code
+        # Banner code
         ascii_art = pyfiglet.figlet_format("REVERSESTRIKE", font="patorjk's_cheese")
         
         # Random color list
         colors = ["green"]
         
-        # Your exact color code
+        # color code
         colored_art = colored(ascii_art, color=random.choice(colors))
         print(colored_art)
         
-        # Add your 5 pillars info
+        #  5 pillars info
         print("\n" + "="*50)
         print("           REVERSE STRIKE - 5 PILLARS")
         print("     Detection | Defense | Intelligence | Stealth | Reverse Hack")
