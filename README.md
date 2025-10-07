@@ -52,4 +52,4 @@ cd reversestrike
 pip install -r requirements.txt
 
 # Run the system
-python Reversestrike/core.py
+python reversestrike/core.py
