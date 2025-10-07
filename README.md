@@ -2,7 +2,7 @@
 
 
 
-## ** 🛡️⚔️When defense becomes offense - The ultimate security response system**
+## **🛡️⚔️When defense becomes offense - The ultimate security response system**
 
 </div>
 
