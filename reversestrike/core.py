@@ -13,7 +13,7 @@ import random
 from datetime import datetime
 from collections import defaultdict
 
-# Import for the awesome banner
+# Banner
 import random
 import pyfiglet
 from termcolor import colored
