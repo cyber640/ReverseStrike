@@ -9,8 +9,17 @@ import threading
 import time
 import json
 import os
+import random
 from datetime import datetime
 from collections import defaultdict
+
+# Import for the awesome banner
+import random
+import pyfiglet
+from termcolor import colored
+from rich.console import Console
+
+console = Console()
 
 class ReverseStrikeComplete:
     def __init__(self):
@@ -25,19 +34,32 @@ class ReverseStrikeComplete:
         self.is_active = True
         self.blocked_ips = set()
         self.show_banner()
-        
+    
     def show_banner(self):
-        banner = """
-==================================================
-           REVERSE STRIKE - 5 PILLARS
-     Detection | Defense | Intelligence | Stealth | Reverse Hack
-==================================================
-        """
-        print(banner)
+        """Show the awesome banner with your exact design"""
+        # Clear screen
+        os.system('cls' if os.name == 'nt' else 'clear')
+        
+        # Your exact banner code
+        ascii_art = pyfiglet.figlet_format("REVERSESTRIKE", font="patorjk's_cheese")
+        
+        # Random color list
+        colors = ["green"]
+        
+        # Your exact color code
+        colored_art = colored(ascii_art, color=random.choice(colors))
+        print(colored_art)
+        
+        # Add your 5 pillars info
+        print("\n" + "="*50)
+        print("           REVERSE STRIKE - 5 PILLARS")
+        print("     Detection | Defense | Intelligence | Stealth | Reverse Hack")
+        print("="*50)
+        print("🚀 System Initialized - Monitoring ports 2222, 4444")
+        print("Press Ctrl+C to stop the system\n")
 
     def defense_system(self, attacker_ip, port):
         """COMPLETE DEFENSE: Protect before anything else"""
-        
         self.attackers[attacker_ip]['ports_hit'].add(port)
         self.attackers[attacker_ip]['attempts'] += 1
         self.attackers[attacker_ip]['last_attempt'] = datetime.now()

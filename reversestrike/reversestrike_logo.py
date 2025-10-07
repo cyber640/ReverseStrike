@@ -13,20 +13,7 @@ colors = ["green"]
 from termcolor import colored
 import time, os
 
-vampire = r"""
-        /^V^\ 
-       / o o \ 
-       V\ Y /V
-        / - \
-        |    \
-        || (__V
-        """
 
-os.system('cls' if os.name == 'nt' else 'clear')
-print(colored(vampire, "red"))
-time.sleep(0.5)
-print(colored(logo, "green"))
-print(colored("\n🩸 REVERSESTRIKE Boot Sequence Initialized 🩸", "magenta"))
 # Option 1: static color
 colored_art = colored(ascii_art, color=random.choice(colors))
 print(colored_art)
