@@ -1,0 +1,3 @@
+{"timestamp": "2025-10-06T22:32:23.167928", "attack_type": "XSS Attempt", "source_ip": "172.16.0.33", "details": "<script>alert()</script> in payload", "severity": "MEDIUM"}
+{"timestamp": "2025-10-06T22:32:57.183901", "attack_type": "Suspicious Open Ports", "source_ip": "127.0.0.1", "details": "Ports [135, 445] are open", "severity": "MEDIUM"}
+{"timestamp": "2025-10-06T22:32:57.195611", "attack_type": "DDoS Suspicion", "source_ip": "198.51.100.10", "details": "High volume of SYN packets", "severity": "HIGH"}
