@@ -1,13 +1,8 @@
 # 🔥 ReverseStrike - 5-Pillar Cyber Defense System
 
-<div align="center">
 
-![Python](https://img.shields.io/badge/python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/license-Proprietary-black?style=for-the-badge)
-![Version](https://img.shields.io/badge/version-1.0.0-red?style=for-the-badge)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=for-the-badge)
 
-**When defense becomes offense - The ultimate security response system**
+## ** 🛡️⚔️When defense becomes offense - The ultimate security response system**
 
 </div>
 
