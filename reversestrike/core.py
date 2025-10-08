@@ -44,7 +44,7 @@ class ReverseStrikeComplete:
         ascii_art = pyfiglet.figlet_format("REVERSESTRIKE", font="dos_rebel")
         
         # Random color list
-        colors = ["red, green"]
+        colors = ["red"]
         
         # color code
         colored_art = colored(ascii_art, color=random.choice(colors))
