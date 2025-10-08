@@ -45,8 +45,15 @@ ReverseStrike is an advanced security framework that transforms traditional defe
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Reversestrike.git
+git clone https://github.com/cyber640/Reversestrike.git
 cd reversestrike
+# Create and activate virtual environment (Windows)
+python -m venv venv
+venv\Scripts\activate
+
+# Create and activate virtual environment (Linux/Mac)
+python3 -m venv venv
+source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
