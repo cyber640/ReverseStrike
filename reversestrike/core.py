@@ -41,10 +41,10 @@ class ReverseStrikeComplete:
         os.system('cls' if os.name == 'nt' else 'clear')
         
         # Banner code
-        ascii_art = pyfiglet.figlet_format("REVERSESTRIKE", font="smshadow")
+        ascii_art = pyfiglet.figlet_format("REVERSESTRIKE", font="dos_rebel")
         
         # Random color list
-        colors = ["green"]
+        colors = ["red, green"]
         
         # color code
         colored_art = colored(ascii_art, color=random.choice(colors))
