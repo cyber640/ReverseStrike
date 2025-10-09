@@ -13,7 +13,7 @@ import random
 from datetime import datetime
 from collections import defaultdict
 
-# Banner
+
 import random
 import pyfiglet
 from termcolor import colored
@@ -36,30 +36,30 @@ class ReverseStrikeComplete:
         self.show_banner()
     
     def show_banner(self):
-        """Show the awesome banner with your exact design"""
-        # Clear screen
+        """ banner design"""
+    
         os.system('cls' if os.name == 'nt' else 'clear')
         
-        # Banner code
+
         ascii_art = pyfiglet.figlet_format("REVERSESTRIKE", font="dos_rebel")
         
-        # Random color list
+    
         colors = ["red"]
         
-        # color code
+        
         colored_art = colored(ascii_art, color=random.choice(colors))
         print(colored_art)
         
-        #  5 pillars info
+    
         print("\n" + "="*50)
         print("           REVERSE STRIKE - 5 PILLARS")
         print("     Detection | Defense | Intelligence | Stealth | Reverse Hack")
         print("="*50)
-        print("🚀 System Initialized - Monitoring ports 2222, 4444")
+        print(" System Initialized - Monitoring ports 2222, 4444")
         print("Press Ctrl+C to stop the system\n")
 
     def defense_system(self, attacker_ip, port):
-        """COMPLETE DEFENSE: Protect before anything else"""
+        """COMPLETE DEFENSE"""
         self.attackers[attacker_ip]['ports_hit'].add(port)
         self.attackers[attacker_ip]['attempts'] += 1
         self.attackers[attacker_ip]['last_attempt'] = datetime.now()
@@ -179,7 +179,7 @@ class ReverseStrikeComplete:
             print(f"Detection error: {e}")
 
     def intelligence_system(self, attacker_ip, port):
-        """Gather intelligence after defense clearance"""
+        """Gather intelligence """
         print(f"[INTELLIGENCE] Researching {attacker_ip}")
         
         open_ports = self.scan_attacker(attacker_ip)
