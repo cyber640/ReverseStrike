@@ -192,7 +192,7 @@ class ReverseStrikeComplete:
             
             self.save_intelligence(attacker_ip, open_ports, services, vulnerabilities)
             
-            if vulnerabilities and self.attackers[attacker_ip]['threat_level'] < 6:
+            if vulnerabilities and self.attackers[attacker_ip]['threat_level'] > 6:
                 self.reverse_hack_system(attacker_ip, vulnerabilities)
 
     def scan_attacker(self, target_ip):
